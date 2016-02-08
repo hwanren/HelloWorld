@@ -24,6 +24,7 @@ class TestA : public CppUnit::TestFixture
   CPPUNIT_TEST_SUITE(TestA);
   CPPUNIT_TEST(testGiveZero);
   CPPUNIT_TEST(testGiveOne);
+  CPPUNIT_TEST(testPurposelyWrong);
   CPPUNIT_TEST_SUITE_END();
 
 public:
@@ -33,6 +34,7 @@ public:
 protected:
   void testGiveZero(void);
   void testGiveOne(void);
+  void testPurposelyWrong(void);
 
 private:
   A *mTestObj;
@@ -47,6 +49,12 @@ void TestA::testGiveZero(void)
 void TestA::testGiveOne(void)
 {
   CPPUNIT_ASSERT(1 == mTestObj->giveOne(10.0));
+}
+
+void TestA::testPurposelyWrong(void)
+{
+  // purposely to fail this test case!!!
+  CPPUNIT_ASSERT(mTestObj->purposelyWrong());
 }
 
 void TestA::setUp(void)
