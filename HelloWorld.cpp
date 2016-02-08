@@ -1,16 +1,8 @@
 #include <iostream>
 
+#include "A.hpp"
+
 using namespace std;
-
-class A {
-public:
-  A() { i = 0; f = 0.0; }
-  ~A() {}
-
-private:
-  int i;
-  float f;
-};
 
 
 int main(int argc, char **argv)

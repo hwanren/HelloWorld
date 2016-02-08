@@ -2,6 +2,7 @@
 set(CMAKE_C_COMPILER "gcc")
 set(CMAKE_CXX_COMPILER "g++")
 #project(HelloWorld C)
+project(HelloWorld)
 
 add_executable(HelloC hello.c)
-add_executable(HelloWord HelloWorld.cpp)
+add_executable(HelloWorld HelloWorld.cpp)
