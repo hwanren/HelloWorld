@@ -12,5 +12,6 @@ int A::giveOne(float f)
 
 bool A::purposelyWrong(void)
 {
-  return false;
+  return true;	// uncommit to fix this fix in purpose
+  // return false;	// uncommit to see the effect of cppunit fail
 }
